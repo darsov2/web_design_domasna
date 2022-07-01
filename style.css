@@ -1,0 +1,601 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-center-v {
+    align-items: center;
+}
+
+
+.container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #414040;
+    height: 8rem;
+    padding: 0 5rem;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+    border: 2px #fff transparent;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: #c7ea46;
+    padding-bottom: 8px;
+    border-bottom: 1px #c7ea46 solid;
+}
+
+.navbar-link.nav-kontakt:link,
+.navbar-link.nav-kontakt:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #c7ea46;
+}
+
+.navbar-link.nav-kontakt:hover,
+.navbar-link.nav-kontakt:active {
+    background-color: yellowgreen;
+}
+
+.header h1 {
+    letter-spacing: 1.3rem;
+    font-weight: bold;
+}
+
+.section-pocetna {
+    background-color: #414040;
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.pocetna {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.pocetna-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.pocetna-img {
+    width: 100%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    transition: all 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #c7ea46;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: yellowgreen;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+    background-color: #fff;
+    color: #414040;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+    background-color: whitesmoke;
+    box-shadow: inset 0 0 0 3px #414040;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.pocetna-text-box .btn:first-of-type{
+    margin-right: 1.6rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.line-section-about {
+    margin: 0 50rem;
+    border: 5px solid #414040;
+    border-radius: 9px;
+    margin-bottom: 3rem;
+}
+
+.section-about {
+    padding: 4.8rem 0 3.2rem 0;
+    color: #414040 !important;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.section-pocetna .heading-primary,
+.section-education .heading-secondary,
+.section-education .heading-tertiary {
+    color: whitesmoke;
+}
+
+.section-education {
+    padding: 9.6rem 0;
+    background-color: #414040;
+    color: white !important;
+}
+
+.edu-num {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+
+.edu-opis {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+.section-proekti {
+    padding: 9.6rem 0;
+}
+
+.proekt {
+    border-radius: 11px;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.proekt-prv {
+    justify-self: end;
+    border: 2px solid #c7ea46;
+    padding: 4.6rem;
+    color: #414040 !important;
+    background-color: white;
+}
+
+.proekt-vtor {
+    background-color: #f1f3f5;
+    padding: 4.8rem;
+    //position: relative;
+    overflow: hidden;
+    color: #414040 !important;
+}
+
+.proekt-tret {
+    background-color: #e4e7eb;
+    padding: 4.8rem;
+    //position: relative;
+    overflow: hidden;
+    color: #414040 !important;
+}
+
+.proekt-header {
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.proekt-name {
+    color: #414040;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    margin-bottom: 3.2rem;
+}
+
+.proekt-repo {
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.proekt-details {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #414040;
+}
+
+.proj-img {
+    width: 85%;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.show-more {
+    margin-left: 100px;
+}
+
+.section-skills {
+    color: #414040 !important;
+    background-color: #f4f4f4;
+    padding: 6rem 0;
+}
+
+.skills {
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 4.8rem;
+}
+
+.skills .lenta {
+    margin: 4.2rem 0;
+}
+
+.skills .lenta span {
+    font-weight: 500;
+}
+
+.skills .lenta .info {
+    font-size: 1.6rem;
+}
+
+.skills .lenta .progres {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                      0px 1px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.lenta .progres span {
+    height: 100%;
+    width: 80%;
+    background-color: #c7ea46;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.info {
+    margin-bottom: 1.5rem;
+}
+
+.lenta .progres span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #414040;
+    top: -10px;
+    right: 0;
+ }
+
+.lenta .progres span::after {
+    position: absolute;
+    content: "80%";
+    right: 0;
+    top: -22px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #414040;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.lenta:nth-of-type(2) .progres span::after {
+    content: "50%";
+}
+
+.lenta:nth-of-type(2) .progres span {
+    width: 50%;
+}
+
+
+.lenta:nth-of-type(3) .progres span::after {
+    content: "20%";
+}
+
+.lenta:nth-of-type(3) .progres span {
+    width: 20%;
+}
+
+.lenta:nth-of-type(4) .progres span::after {
+    content: "70%";
+}
+
+.lenta:nth-of-type(4) .progres span {
+    width: 70%;
+}
+
+.lenta:nth-of-type(5) .progres span::after {
+    content: "40%";
+}
+
+.lenta:nth-of-type(5) .progres span {
+    width: 40%;
+}
+
+.section-kontakt {
+    padding: 2.4rem 0 12.8rem;
+    color: white !important;
+    background-color: #f4f4f4;
+}
+
+.kontakt {
+    display: grid;
+    background-color: #414040;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.kontakt-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: white;
+}
+
+.kontakt .heading-secondary {
+    color: white;
+    margin-bottom: 3.2rem;
+}
+
+.kontakt-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.kontakt-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.kontakt-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.kontakt-form input,
+.kontakt-form select,
+.kontakt-form textarea{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: #414040;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.kontakt-form textarea {
+    height: 18rem;
+    resize: none;
+}
+
+.brm {
+    grid-column: 1 / 3;
+}
+
+.kontakt-form input::placeholder {
+    color: #aaa;
+}
+
+.kontakt *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem #c7ea46;
+}
+
+.btn-form {
+    background-color: #c7ea46;
+    color: #fdf2e9;
+    align-self: center;
+    padding: 1.2rem;
+    grid-column: 1 / 3;
+    margin: 0 25%;
+}
+
+.btn-form:hover {
+    background-color: yellowgreen;
+    color: #fff;
+}
+
+.strelka-gore {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 6.5rem;
+    font-weight: 700;
+    background: none;
+    border: 5px #c7ea46 solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 36px;
+    color: #c7ea46;
+}
+
+#proekt-hide-but {
+    color: #414040 !important;
+}
+
+.footer {
+    padding: 2.4rem 0 4rem;
+    color: white !important;
+    background-color: #414040;
+}
+
+.nav-footer .navbar-f {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding-top: 1rem;
+}
+
+.nav-footer .navbar-f .navbar-f-link:link,
+.nav-footer .navbar-f .navbar-f-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.nav-footer .navbar-f .navbar-f-link:hover,
+.nav-footer .navbar-f .navbar-f-link:active {
+    color: #c7ea46;
+}
+
+.social-icon {
+    font-size: 3rem;
+    text-align: right;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 1.4rem;
+}
+
+.social {
+    justify-self: end;
+}
+
+.social-icon:hover {
+    color: #c7ea46;
+}
+
+.footer-grid {
+    row-gap: 3.5rem;
+}
+
+.copyright {
+    grid-column: 1 / 3;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,403 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal WebSite | Name Surname</title>
+
+        <meta name="description" content="Personal website of Name Surname">
+        <meta name="keywords" content="Name Surname, skill1, skill2, skill3, project1, project2, projcet3">
+        <meta name="author" content="David Arsov">
+
+        <link rel="stylesheet" href="style.css">
+        <script
+                type="module"
+                src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js">
+        </script>
+        <script
+                nomodule=""
+                src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js">
+        </script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <a href="#"><ion-icon name="arrow-up-outline" class="strelka-gore"></ion-icon></a>
+        <header class="header">
+            <h1>NAME SURNAME</h1>
+            <nav class="main-nav">
+                <ul class="navbar">
+                    <li>
+                        <a class="navbar-link" href="#section-about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#edu">EDUCATION</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#proekti">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link" href="#skills">SKILLS</a>
+                    </li>
+                    <li>
+                        <a class="navbar-link nav-kontakt" href="#kontakt">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-pocetna">
+                <div class="pocetna">
+                    <div class="pocetna-text-box">
+                        <h1 class="heading-primary">Name Surname</h1>
+                        <p class="pocetna-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#kontakt" class="btn btn-full">Contact me</a>
+                        <a href="#section-about" class="btn btn-outline">Read more &darr;</a>
+                    </div>
+                    <div class="pocetna-img-box">
+                        <img src="slika_secena.png" class="pocetna-img" alt="Man standing still with crossed arms"/>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-about" id="section-about">
+                <h1 class="heading-primary center-text">ABOUT</h1>
+                <hr class="line-section-about">
+                <div class="container">
+                    <div class="pocetna-text-box">
+                        <h1 class="heading-tertiary">Lorem ipsum</h1>
+                        <p class="pocetna-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span id="marker">...</span>
+                        </p>
+                        <h1 class="heading-tertiary" id="about-hide-h1" style="display: none;">Lorem ipsum</h1>
+                        <p class="pocetna-description" id="about-hide" style="display: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <a class="btn btn-outline" id="about-but" onclick="hideUnhide()">Read more &darr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-education" id="edu">
+                <div class="container">
+                    <h2 class="heading-secondary">EDUCATION</h2>
+                </div>
+
+                <div class="container grid grid-3-cols grid-center-v">
+                    <div class="edu-cont">
+                        <p class="edu-num">01</p>
+                        <h3 class="heading-tertiary">High School</h3>
+                        <p class="edu-opis">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="edu-cont">
+                        <p class="edu-num">02</p>
+                        <h3 class="heading-tertiary">Bachelor Degree</h3>
+                        <p class="edu-opis">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="edu-cont">
+                        <p class="edu-num">03</p>
+                        <h3 class="heading-tertiary">Master Degree</h3>
+                        <p class="edu-opis">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-proekti" id="proekti">
+                <div class="container">
+                    <h2 class="heading-secondary">PORTFOLIO</h2>
+                </div>
+                <div class="container grid grid-3-cols margin-bottom-md grid-center-v">
+                    <div class="proekt proekt-prv">
+                        <header class="proekt-header">
+                            <p class="proekt-name">Project1</p>
+                            <img src="thumb.png" class="proj-img">
+                        </header>
+                        <ul class="list">
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                        </ul>
+                        <div class="proekt-repo">
+                            <a href="#" class="btn btn-full">To the repo</a>
+                        </div>
+                    </div>
+
+                    <div class="proekt proekt-vtor">
+                        <header class="proekt-header">
+                            <p class="proekt-name">Project2</p>
+                            <img src="thumb.png" class="proj-img">
+                        </header>
+                        <ul class="list">
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                        </ul>
+                        <div class="proekt-repo">
+                            <a href="#" class="btn btn-full">To the repo</a>
+                        </div>
+                    </div>
+
+                    <div class="proekt proekt-tret">
+                        <header class="proekt-header">
+                            <p class="proekt-name">Project3</p>
+                            <img src="thumb.png" class="proj-img">
+                        </header>
+                        <ul class="list">
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                        </ul>
+                        <div class="proekt-repo">
+                            <a href="#" class="btn btn-full">To the repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container grid grid-3-cols margin-bottom-md grid-center-v" id="proekt-hide" style="display: none;">
+                    <div class="proekt proekt-prv">
+                        <header class="proekt-header">
+                            <p class="proekt-name">Project4</p>
+                            <img src="thumb.png" class="proj-img">
+                        </header>
+                        <ul class="list">
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                        </ul>
+                        <div class="proekt-repo">
+                            <a href="#" class="btn btn-full">To the repo</a>
+                        </div>
+                    </div>
+
+                    <div class="proekt proekt-vtor">
+                        <header class="proekt-header">
+                            <p class="proekt-name">Project5</p>
+                            <img src="thumb.png" class="proj-img">
+                        </header>
+                        <ul class="list">
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                        </ul>
+                        <div class="proekt-repo">
+                            <a href="#" class="btn btn-full">To the repo</a>
+                        </div>
+                    </div>
+
+                    <div class="proekt proekt-tret">
+                        <header class="proekt-header">
+                            <p class="proekt-name">Project6</p>
+                            <img src="thumb.png" class="proj-img">
+                        </header>
+                        <ul class="list">
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                            <li class="list-item">
+                                <ion-icon class="list-icon" name="add-outline"></ion-icon>
+                                <span>Feature</span>
+                            </li>
+                        </ul>
+                        <div class="proekt-repo">
+                            <a href="#" class="btn btn-full">To the repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <a class="btn btn-outline" id="proekt-hide-but" onclick="hideUnhideProj()">Show more &darr;</a>
+                </div>
+            </section>
+
+            <section class="section-skills" id="skills">
+                <div class="container">
+                    <h2 class="heading-secondary">SKILLS</h2>
+                </div>
+                <div class="container">
+                    <div class="skills margin-bottom-md">
+                        <div class="lenta">
+                            <div class="info">
+                                <span>SKILL</span>
+                            </div>
+                            <div class="progres">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="lenta">
+                            <div class="info">
+                                <span>SKILL</span>
+                            </div>
+                            <div class="progres">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="lenta">
+                            <div class="info">
+                                <span>SKILL</span>
+                            </div>
+                            <div class="progres">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="lenta">
+                            <div class="info">
+                                <span>SKILL</span>
+                            </div>
+                            <div class="progres">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="lenta">
+                            <div class="info">
+                                <span>SKILL</span>
+                            </div>
+                            <div class="progres">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-kontakt" id="kontakt">
+                <div class="container">
+                    <div class="kontakt">
+                        <div class="kontakt-text-box">
+                            <h2 class="heading-secondary">Contact me!</h2>
+                            <p class="kontakt-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <form class="kontakt-form" action="#">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input id="name" type="text" placeholder="Your Name"/>
+                                </div>
+
+                                <div>
+                                    <label for="mail">Email address</label>
+                                    <input id="mail" type="email" placeholder="user@mail.com" required/>
+                                </div>
+
+                                <div class="brm">
+                                    <label for="message">Your message...</label>
+                                    <textarea id="message" placeholder=""></textarea>
+                                </div>
+
+                                <button class="btn btn-form">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="grid grid-2-cols footer-grid">
+                        <div class="nav-footer">
+                            <ul class="navbar-f">
+                            <li>
+                                <a class="navbar-f-link" href="#section-about">About</a>
+                            </li>
+                            <li>
+                                <a class="navbar-f-link" href="#edu">Education</a>
+                            </li>
+                            <li>
+                                <a class="navbar-f-link" href="#proekti">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="navbar-f-link" href="#skills">Skills</a>
+                            </li>
+                            <li>
+                                <a class="navbar-f-link" href="#kontakt">Contact</a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="social">
+                            <a href="" target=”_blank” class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="" target=”_blank” class="social-icon"><ion-icon name="logo-google"></ion-icon></a>
+                            <a href="" target=”_blank” class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+                        </div>
+                        <div class="container copyright">
+                            <p>All rights reserved &copy; 2022 David Arsov</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
+    </html>
